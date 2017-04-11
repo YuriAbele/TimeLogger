@@ -1,1 +1,2 @@
 # TimeLogger
+Work Time Logger
