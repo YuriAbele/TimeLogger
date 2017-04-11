@@ -67,7 +67,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".gitignore" />
     <Content Include="app\app.component.js" />
     <Content Include="app\app.component.spec.js" />
     <Content Include="app\app.module.js" />
