@@ -4,6 +4,13 @@
 /TimeLogger.Web/TimeLogger.Web.csproj.user
 /TimeLogger.Web/bin
 /TimeLogger.Web/obj
+/TimeLogger.Web/.idea
 /TimeLogger.Web/node_modules
+/TimeLogger.Web/jspm_packages
+/TimeLogger.Web/npm-debug.log
+/TimeLogger.Web/debug.log
+/TimeLogger.Web/_test-output
+/TimeLogger.Web/_temp
 /TimeLogger.MSSQL/TimeLogger.MSSQL.dbmdl
 /.vs
+/packages
