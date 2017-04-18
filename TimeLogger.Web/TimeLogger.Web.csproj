@@ -67,41 +67,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\app.component.js" />
-    <Content Include="app\app.component.spec.js" />
-    <Content Include="app\app.module.js" />
-    <Content Include="e2e\app.e2e-spec.js" />
-    <Content Include="favicon.ico" />
-    <Content Include="index.html" />
     <Content Include="karma-test-shim.js" />
     <Content Include="karma.conf.js" />
-    <Content Include="main.js" />
-    <Content Include="non-essential-files.osx.txt" />
-    <Content Include="non-essential-files.txt" />
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="e2e\tsconfig.json" />
-    <Content Include="protractor.config.js" />
     <Content Include=".editorconfig" />
-    <Content Include=".travis.yml" />
-    <Content Include="bs-config.e2e.json" />
-    <Content Include="bs-config.json" />
-    <Content Include="CHANGELOG.md" />
-    <Content Include="LICENSE" />
     <Content Include="package.json" />
-    <Content Include="README.md" />
-    <Content Include="styles.css" />
-    <Content Include="systemjs-angular-loader.js" />
-    <Content Include="systemjs.config.extras.js" />
-    <Content Include="systemjs.config.js" />
+    <Content Include="src\index.html" />
+    <Content Include="src\styles.css" />
+    <Content Include="src\systemjs-angular-loader.js" />
+    <Content Include="src\systemjs.config.js" />
     <Content Include="tslint.json" />
-    <Content Include="app\app.component.js.map" />
-    <Content Include="app\app.component.spec.js.map" />
-    <Content Include="app\app.module.js.map" />
-    <Content Include="main.js.map" />
     <Content Include="tsconfig.json" />
-    <Content Include="e2e\app.e2e-spec.js.map" />
+    <Content Include="src\tsconfig.json" />
+    <Content Include="bs-config.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -116,11 +96,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app\app.component.spec.ts" />
-    <TypeScriptCompile Include="app\app.component.ts" />
-    <TypeScriptCompile Include="app\app.module.ts" />
-    <TypeScriptCompile Include="e2e\app.e2e-spec.ts" />
-    <TypeScriptCompile Include="main.ts" />
+    <TypeScriptCompile Include="src\app\app.component.ts" />
+    <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\main.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

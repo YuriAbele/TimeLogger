@@ -7,7 +7,7 @@ Error.stackTraceLimit = 0; // "No stacktrace"" is usually best for app testing.
 jasmine.DEFAULT_TIMEOUT_INTERVAL = 1000;
 
 // builtPaths: root paths for output ("built") files
-// get from karma.config.js, then prefix with '/base/' (default is 'src/')
+// get from karma.config.js, then prefix with '/src/' (default is 'app/')
 var builtPaths = (__karma__.config.builtPaths || ['src/'])
 	.map(function (p) { return '/base/' + p; });
 
@@ -34,9 +34,8 @@ var allSpecFiles = Object.keys(window.__karma__.files)
 	.filter(isBuiltFile);
 
 System.config({
-	// Base URL for System.js calls. 'base/' is where Karma serves files from.
 	baseURL: 'base/src',
-	// Extend usual application package list with test folder
+	// Extend usual application package list with testing folder
 	packages: { 'testing': { main: 'index.js', defaultExtension: 'js' } },
 
 	// Assume npm: is set in `paths` in systemjs.config
@@ -49,8 +48,8 @@ System.config({
 		'@angular/platform-browser-dynamic/testing': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic-testing.umd.js',
 		'@angular/http/testing': 'npm:@angular/http/bundles/http-testing.umd.js',
 		'@angular/router/testing': 'npm:@angular/router/bundles/router-testing.umd.js',
-		'@angular/forms/testing': 'npm:@angular/forms/bundles/forms-testing.umd.js'
-	}
+		'@angular/forms/testing': 'npm:@angular/forms/bundles/forms-testing.umd.js',
+	},
 });
 
 System.import('systemjs.config.js')
@@ -74,14 +73,15 @@ function initTestBed() {
 			System.import('@angular/core/testing'),
 			System.import('@angular/platform-browser-dynamic/testing')
 		])
-		.then(function(providers) {
+
+		.then(function (providers) {
 			var coreTesting = providers[0];
 			var browserTesting = providers[1];
 
 			coreTesting.TestBed.initTestEnvironment(
 				browserTesting.BrowserDynamicTestingModule,
 				browserTesting.platformBrowserDynamicTesting());
-		});
+		})
 }
 
 // Import all spec files and start karma

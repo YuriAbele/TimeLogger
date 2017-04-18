@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeLogger.Web", "TimeLogge
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TimeLogger.MSSQL", "TimeLogger.MSSQL\TimeLogger.MSSQL.sqlproj", "{08D4C435-264B-4AD1-BAA3-4C30690AA7BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.Blank", "..\Angular.Blank\Angular.Blank.csproj", "{B7A4781F-5AEE-4F13-BF02-75D4807FD8F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.Blank", "..\Angular.Blank\Angular.Blank\Angular.Blank.csproj", "{B7A4781F-5AEE-4F13-BF02-75D4807FD8F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular.Playground", "..\Angular.Blank\Angular.Playground\Angular.Playground.csproj", "{DAD990FD-0132-4797-9492-0E09B7FC5909}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{B7A4781F-5AEE-4F13-BF02-75D4807FD8F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7A4781F-5AEE-4F13-BF02-75D4807FD8F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7A4781F-5AEE-4F13-BF02-75D4807FD8F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAD990FD-0132-4797-9492-0E09B7FC5909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAD990FD-0132-4797-9492-0E09B7FC5909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAD990FD-0132-4797-9492-0E09B7FC5909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAD990FD-0132-4797-9492-0E09B7FC5909}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
