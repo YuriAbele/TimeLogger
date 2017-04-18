@@ -70,6 +70,7 @@
     <Content Include="app\app.component.js" />
     <Content Include="app\app.component.spec.js" />
     <Content Include="app\app.module.js" />
+    <Content Include="e2e\app.e2e-spec.js" />
     <Content Include="favicon.ico" />
     <Content Include="index.html" />
     <Content Include="karma-test-shim.js" />
@@ -100,6 +101,7 @@
     <Content Include="app\app.module.js.map" />
     <Content Include="main.js.map" />
     <Content Include="tsconfig.json" />
+    <Content Include="e2e\app.e2e-spec.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
