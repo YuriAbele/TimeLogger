@@ -16,7 +16,7 @@
     <RootNamespace>TimeLogger.Web</RootNamespace>
     <AssemblyName>TimeLogger.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -34,6 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PublishDatabases>false</PublishDatabases>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -74,13 +75,12 @@
     </Content>
     <Content Include=".editorconfig" />
     <Content Include="package.json" />
-    <Content Include="src\index.html" />
-    <Content Include="src\styles.css" />
-    <Content Include="src\systemjs-angular-loader.js" />
-    <Content Include="src\systemjs.config.js" />
+    <Content Include="index.html" />
+    <Content Include="styles.css" />
+    <Content Include="systemjs-angular-loader.js" />
+    <Content Include="systemjs.config.js" />
     <Content Include="tslint.json" />
     <Content Include="tsconfig.json" />
-    <Content Include="src\tsconfig.json" />
     <Content Include="bs-config.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -96,9 +96,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="src\app\app.component.ts" />
-    <TypeScriptCompile Include="src\app\app.module.ts" />
-    <TypeScriptCompile Include="src\main.ts" />
+    <TypeScriptCompile Include="app\app.component.ts" />
+    <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="main.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
@@ -119,7 +119,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>4146</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:4146/</IISUrl>
+          <IISUrl>http://yuri.timelogger/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
